@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ENTER DETAILS:"
+            android:textColor="#FBC02D"
+            android:textStyle="bold"
+            android:textSize="27dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:hint="Enter Name"
+            android:textColorHint="#ffff"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/branch"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp"
+            android:hint="Branch"
+            android:textColorHint="#ffff"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp"
+            android:hint="Year"
+            android:textColorHint="#ffff"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/regd_no"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp"
+            android:hint="Registration No"
+            android:textColorHint="#ffff"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="90dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
